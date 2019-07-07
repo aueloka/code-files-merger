@@ -8,12 +8,12 @@ namespace Aueloka.ConsoleFileMerge.Internal
     internal class Program
     {
         private const int MaxRecursionDepth = 4;
-        private static readonly string[] directoryArgs = { "--d", "--directory" };
-        private static readonly string[] mergeFileNameArgs = { "--o", "--output" };
+        private static readonly string[] directoryArgs = { "-d", "-directory" };
+        private static readonly string[] mergeFileNameArgs = { "-o", "-output" };
         private const string RecursiveOption = "--recurse";
         private const string UsingsInsideNameSpaceOption = "--usings-inside";
         private const string CSharpFileExtension = ".cs";
-        private const string DefaultOutputFileName = "CSharp-Merged.cs";
+        private const string DefaultOutputFileName = "csmerge-output.cs";
 
         private static void Main(string[] args)
         {
