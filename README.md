@@ -4,7 +4,7 @@ Utility console tool that helps combine multiple code source file into one
 ## How To
 Extract the contents in the executable.zip file.
 
-Usage: ```codemerge.exe -l <languageTpye> -d <Directory> -o <Output cs file name> -recurse -ignore <dir names to ignore>```
+Usage: ```codemerge.exe -l <languageType> -d <Directory> -o <Output cs file name> -recurse -ignore <dir names to ignore>```
 
 ## Parameters
 
@@ -14,9 +14,9 @@ Usage: ```codemerge.exe -l <languageTpye> -d <Directory> -o <Output cs file name
 * `-recurse`: When provided, sub-directories will also be searched for code files
 
 ### C# Merge: command `-l cs`
-* `--usings-inside`: Optional marker. When provided, the output file will have the using statements inside the each namespace
+* `--usings-inside`: Optional marker. When provided, the output file will have the using statements inside each namespace
 
-## Constraints
+#### Constraints
 
 * Nested namespaces are not supported e.g
 
