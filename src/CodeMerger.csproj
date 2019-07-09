@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSharp\CSharpConsoleOptions.cs" />
     <Compile Include="CSharp\CSharpFileParser.cs" />
     <Compile Include="CSharp\IImportContainer.cs" />
     <Compile Include="CSharp\Namespace.cs" />
@@ -52,7 +53,7 @@
     <Compile Include="CSharp\CSharpFileInfo.cs" />
     <Compile Include="CSharp\CSharpFileMerger.cs" />
     <Compile Include="IFileMerger.cs" />
-    <Compile Include="MergeManager\IMergeManager.cs" />
+    <Compile Include="IMergeManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

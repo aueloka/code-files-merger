@@ -58,6 +58,9 @@ If you would like to add a merger for a new language, all you need to do is:
 * Namespaces should be `Aueloka.CodeMerger.<languageType>`
 * Options/Customizations that will be received from the console should start with `--`
     * You can create a static `ConsoleOptions` class to keep all the options
-* Add unit tests in `tests/`
+
+### Tests
+* Add unit tests in `tests/<LanguageName>`
+* Tests namespaces should be `Aueloka.CodeMerger.<languageType>.Tests.Unit`
 
 Thank you for contributing!

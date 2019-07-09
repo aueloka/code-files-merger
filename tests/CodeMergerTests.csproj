@@ -51,9 +51,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CSharpFileParserTests.cs" />
+    <Compile Include="CSharp\CSharpFileParserTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CSharpFileMergerTests.cs" />
+    <Compile Include="CSharp\CSharpFileMergerTests.cs" />
     <Compile Include="ConsoleMergeManagerTests.cs" />
     <Compile Include="ConsoleArgumentManagerTests.cs" />
   </ItemGroup>
@@ -67,7 +67,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="single_namespace_file.txt" />
+    <Content Include="CSharp\single_namespace_file.txt" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

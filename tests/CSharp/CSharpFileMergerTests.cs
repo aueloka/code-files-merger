@@ -1,5 +1,5 @@
 ﻿
-namespace Aueloka.CodeMerger.Tests.Unit
+namespace Aueloka.CodeMerger.CSharp.Tests.Unit
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 

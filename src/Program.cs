@@ -2,7 +2,6 @@
 namespace Aueloka.CodeMerger
 {
     using System;
-    using Aueloka.CodeMerger.MergeManager;
     using Aueloka.CodeMerger.MergeManager.Console;
 
     internal class Program

@@ -1,6 +1,6 @@
 ﻿
 
-namespace Aueloka.CodeMerger.MergeManager
+namespace Aueloka.CodeMerger
 {
     using System.Threading.Tasks;
 
