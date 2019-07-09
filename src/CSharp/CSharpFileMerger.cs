@@ -49,7 +49,7 @@ namespace Aueloka.CodeMerger.CSharp
             get
             {
                 return string.Concat(
-                    ConsoleOptions.UsingsInsideNamespace, 
+                    CSharpConsoleOptions.UsingsInsideNamespace, 
                     ": ", "Specifies that using statements be placed inside the namespaces");
             }
         }
@@ -237,15 +237,10 @@ namespace Aueloka.CodeMerger.CSharp
         {
             Dictionary<string, MergeOption> mapping = new Dictionary<string, MergeOption>
             {
-                { ConsoleOptions.UsingsInsideNamespace, MergeOption.UsingsInsideNamespace },
+                { CSharpConsoleOptions.UsingsInsideNamespace, MergeOption.UsingsInsideNamespace },
             };
 
             return options.Select(arg => mapping[arg]);
-        }
-
-        private static class ConsoleOptions
-        {
-            public const string UsingsInsideNamespace = "--usings-inside";
         }
     }
 }
