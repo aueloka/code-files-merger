@@ -232,15 +232,5 @@ namespace Aueloka.CodeMerger.CSharp
 
             return import1.CompareTo(import2);
         }
-
-        public static IEnumerable<MergeOption> ConvertToMergeOptions(IEnumerable<string> options)
-        {
-            Dictionary<string, MergeOption> mapping = new Dictionary<string, MergeOption>
-            {
-                { CSharpConsoleOptions.UsingsInsideNamespace, MergeOption.UsingsInsideNamespace },
-            };
-
-            return options.Select(arg => mapping[arg]);
-        }
     }
 }

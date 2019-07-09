@@ -90,7 +90,7 @@ namespace Aueloka.CodeMerger.MergeManager.Console
 
             string outputPath = this.GetOutputPath(merger.OutputExtension);
             string mergeText = await ConsoleMergeManager.GetMergedTextAsync(merger);
-            await WriteOutputToFileAsync(outputPath, mergeText);
+            await ConsoleMergeManager.WriteOutputToFileAsync(outputPath, mergeText);
         }
 
         private string GetHelp()
@@ -126,7 +126,8 @@ namespace Aueloka.CodeMerger.MergeManager.Console
             switch (languageType)
             {
                 case Constants.SupportedLanguages.CSharp:
-                    IEnumerable<CSharpFileMerger.MergeOption> mergeOptions = CSharpFileMerger.ConvertToMergeOptions(this.argumentManager.GetOptions());
+                    IEnumerable<CSharpFileMerger.MergeOption> mergeOptions = 
+                        CSharpConsoleOptions.ConvertToMergeOptions(this.argumentManager.GetOptions());
                     return new CSharpFileMerger(mergeOptions);
                 default:
                     throw new ArgumentException("Language is not supported.", nameof(languageType));
