@@ -8,7 +8,8 @@ Usage: ```codemerge.exe -l <languageType> -d <Directory> -o <Output cs file name
 
 ## Parameters
 
-* `-l`: Language types. Only `cs` for now
+* `-l`: Language types. 
+    * `cs` - C#
 * `-d`: Directory containing language code files
 * `-o`: Optional path to output file. Defaults to codemerge-output.`<lang-extension>` in the curent directory
 * `-recurse`: When provided, sub-directories will also be searched for code files
