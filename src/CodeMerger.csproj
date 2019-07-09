@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CDA6C352-73DE-4641-B180-0DB038BFE078}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Aueloka.ConsoleFileMerge</RootNamespace>
-    <AssemblyName>csmerge</AssemblyName>
+    <RootNamespace>Aueloka.CodeMerger</RootNamespace>
+    <AssemblyName>codemerge</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CSharpFileInfo.cs" />
-    <Compile Include="CSharpFileMerger.cs" />
+    <Compile Include="CSharp\CSharpFileParser.cs" />
+    <Compile Include="CSharp\IImportContainer.cs" />
+    <Compile Include="CSharp\Namespace.cs" />
+    <Compile Include="MergeManager\ConsoleArgumentManager.cs" />
+    <Compile Include="MergeManager\ConsoleMergeManager.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="CSharp\CSharpFileInfo.cs" />
+    <Compile Include="CSharp\CSharpFileMerger.cs" />
     <Compile Include="IFileMerger.cs" />
+    <Compile Include="MergeManager\IMergeManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,11 +61,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-
   <Target Name="Zip" AfterTargets="Build">
-        <ZipDirectory
-            SourceDirectory="$(OutputPath)"
-            DestinationFile="$(MSBuildProjectDirectory)\executable.zip"
-            Overwrite="true" />
+    <ZipDirectory SourceDirectory="$(OutputPath)" DestinationFile="$(MSBuildProjectDirectory)\executable.zip" Overwrite="true" />
   </Target>
 </Project>

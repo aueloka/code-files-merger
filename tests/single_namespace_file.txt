@@ -1,0 +1,15 @@
+﻿using System.Linq;
+
+namespace FooNamespace
+{
+    using System;
+    using FooNamespace.Bar;
+
+    class Foo
+    {
+        public static void Main()
+        {
+
+        }
+    }
+}

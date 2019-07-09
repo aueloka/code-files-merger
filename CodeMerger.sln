@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.705
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFileMerge", "ConsoleFileMerge.csproj", "{CDA6C352-73DE-4641-B180-0DB038BFE078}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMerger", "src\CodeMerger.csproj", "{CDA6C352-73DE-4641-B180-0DB038BFE078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMergerTests", "tests\CodeMergerTests.csproj", "{F36DEAB9-D92A-45C6-BF83-37B7CC013C45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CDA6C352-73DE-4641-B180-0DB038BFE078}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDA6C352-73DE-4641-B180-0DB038BFE078}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDA6C352-73DE-4641-B180-0DB038BFE078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F36DEAB9-D92A-45C6-BF83-37B7CC013C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F36DEAB9-D92A-45C6-BF83-37B7CC013C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F36DEAB9-D92A-45C6-BF83-37B7CC013C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F36DEAB9-D92A-45C6-BF83-37B7CC013C45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
