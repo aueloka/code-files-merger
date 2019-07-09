@@ -4,7 +4,7 @@ Utility console tool that helps combine multiple code source file into one
 ## How To
 Extract the contents in the executable.zip file.
 
-Usage: ```codemerge.exe -l <languageType> -d <Directory> -o <Output cs file name> -recurse -ignore <dir names to ignore>```
+Usage: ```codemerge.exe -l <languageType> -d <Directory> -o <Output file path> -recurse -ignore <dir names to ignore>```
 
 ## Parameters
 
