@@ -48,3 +48,16 @@ namespace Foo.Boo
 
 }
 ```
+
+## Contributing
+
+If you would like to add a merger for a new language, all you need to do is:
+
+* Add a folder to `src/` called `<languageName>`
+* Create an implementation of `IFileMerger` located in `src/` in `<src/LanguageName>`
+* Namespaces should be `Aueloka.CodeMerger.<languageType>`
+* Options/Customizations that will be received from the console should start with `--`
+    * You can create a static `ConsoleOptions` class to keep all the options
+* Add unit tests in `tests/`
+
+Thank you for contributing!
