@@ -12,7 +12,7 @@ namespace Aueloka.CodeMerger.CSharp.Tests.Unit
         [TestMethod]
         public void TestWillParseAll()
         {
-            string file = @"..\..\CSharp\single_namespace_file.txt";
+            string file = @"CSharp\single_namespace_file.txt";
             CSharpFileInfo fileInfo = CSharpFileParser.ParseFile(file);
 
             Assert.AreEqual(1, fileInfo.Imports.Count());
