@@ -14,7 +14,6 @@ namespace Aueloka.CodeMerger.MergeManager.Console
         private readonly string[] args;
         private readonly ConsoleArgumentManager argumentManager;
 
-
         private readonly bool isRecursiveEnabled;
 
         private IEnumerable<string> validExtensions = Enumerable.Empty<string>();
