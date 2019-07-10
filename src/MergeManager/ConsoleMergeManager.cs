@@ -19,15 +19,12 @@ namespace Aueloka.CodeMerger.MergeManager.Console
         private IEnumerable<string> validExtensions = Enumerable.Empty<string>();
         private readonly HashSet<string> ignoredDirectories = new HashSet<string>(Constants.DefaultIgnoredDirectories);
 
-        public ConsoleMergeManager(string[] args, IEnumerable<string> supportedLanguages)
+        public ConsoleMergeManager(string[] args)
         {
             this.args = args;
             this.argumentManager = new ConsoleArgumentManager(args);
-            this.SupportedLanguages = supportedLanguages;
             this.isRecursiveEnabled = this.argumentManager.IsArgumentPresent(Constants.ConsoleArguments.Recursive);
         }
-
-        public IEnumerable<string> SupportedLanguages { get; set; }
 
         /// <summary>
         /// Coordinates the merging of code files using information provided via the console.
@@ -100,7 +97,7 @@ namespace Aueloka.CodeMerger.MergeManager.Console
             {
                 string.Concat(string.Join(", ", Constants.ConsoleArguments.Directory), ": ", "Specifies the directory containing the files to be merged."),
                 string.Concat(string.Join(", ", Constants.ConsoleArguments.Language), ": ", "Specifies the thisming language type that the files to be merged are written in."),
-                string.Concat("Supported language types: ", string.Join(", ", this.SupportedLanguages)),
+                string.Concat("Supported language types: ", string.Join(", ", Constants.SupportedLanguages.Collection)),
                 string.Concat(
                     string.Join(", ", Constants.ConsoleArguments.OutputFileName),
                     ": ", $"Specifies the output file that the result will be written to. Defaults to <CurrentDir>\\{string.Format(Constants.DefaultOutputFileName, ".extension")}"),
