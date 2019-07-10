@@ -6,16 +6,11 @@ namespace Aueloka.CodeMerger
 
     internal class Program
     {
-        private static readonly string[] supportedLanguages =
-        {
-            Constants.SupportedLanguages.CSharp,
-        };
-
         private static void Main(string[] args)
         {
             try
             {
-                IMergeManager mergeManager = new ConsoleMergeManager(args, supportedLanguages);
+                IMergeManager mergeManager = new ConsoleMergeManager(args);
                 mergeManager.MergeAsync().GetAwaiter().GetResult();
             }
             catch(Exception e)
