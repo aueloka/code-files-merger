@@ -27,6 +27,11 @@ namespace Aueloka.CodeMerger
         internal static class SupportedLanguages
         {
             public const string CSharp = "cs";
+            
+            public static readonly IEnumerable<string> Collection = new string[]
+            {
+                SupportedLanguages.CSharp,
+            };
         }
     }
 }
